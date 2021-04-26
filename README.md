@@ -1,13 +1,14 @@
 # ATCwatch  -WatcH
-Custom Arduino C++ firmware for the P8 and PineTime plus many more DaFit Smartwatches
+Custom Arduino C++ firmware for the Gokoo M11 DaFit Smartwatch, slightly modified from the ATCwatch firmware for the Pinetime and Colmi P8 watches by @atc1441.
+
+The Gokoo M11 is cheap fitness tracker, with original Moyoung firmware MOY-EW5. As such it can modified with the tools below, in order to overwrite the bootloader with a standard SoftDevice 5.0. This can then be downgraded to a bootloader based on SoftDevice 2.01, which is the basis for this firmware.
+
+The watch contains:
+A nrf
+
 
 About 150–200uA standby current consumtion. Currently 92 Hours Runtime with heavy notification and usage!
 Basic menu system and notification working.
-
-If you want to use it on PineTime comment the #define P8WATCH to enable the PineTime Pinout. 
-For other watches please try to check the pinout of them and make changes as needed.
-
-**You can support my work via paypal: https://paypal.me/hoverboard1 This keeps projects like this coming.**
 
 Use this portable Arduino version:
 - https://atcnetz.de/downloads/D6Arduino.rar
