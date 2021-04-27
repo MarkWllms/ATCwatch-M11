@@ -7,7 +7,7 @@
 #ifndef _PINOUT_
 #define _PINOUT_
 
-#define P8WATCH//Enable or Disable this line to set for Pinetime or P8 Watch, more pinouts to added here
+//#define P8WATCH//Enable or Disable this line to set for M11 or P8 Watch, more pinouts to added here
 
 #ifdef P8WATCH
 
@@ -65,7 +65,7 @@
 
 #else //P8WATCH 
 
-// Pinetime########################################################################################
+// M11########################################################################################
 //display
 #define LCD_SCK      2
 #define LCD_SDI      3
@@ -99,7 +99,7 @@
 #define HRS3300_TEST      30
 
 //Battery
-#define CHARGE_INDICATION 12 // Pinetime
+#define CHARGE_INDICATION 12 // M11
 //#define CHARGE_INDICATION -1  // P8 Watch
 #define POWER_INDICATION  19
 #define BATTERY_VOLTAGE   31
@@ -108,8 +108,8 @@
 //InputOutput
 #define STATUS_LED        27
 #define VIBRATOR_OUT      16
-#define PUSH_BUTTON_IN    13 // Pinetime
-#define PUSH_BUTTON_OUT   15 //PinetTime
+#define PUSH_BUTTON_IN    20 // M11
+#define PUSH_BUTTON_OUT   -1 //M11
 //#define PUSH_BUTTON_IN    17   // P8 Watch
 //#define PUSH_BUTTON_OUT   -1   // P8 Watch
 

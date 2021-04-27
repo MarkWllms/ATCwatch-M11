@@ -220,6 +220,7 @@ void interrupt_touch() {
 
 void interrupt_accl() {
   sleep_up(WAKEUP_ACCL_INT);
+  get_accl_int();
   set_sleep_time();
 }
 

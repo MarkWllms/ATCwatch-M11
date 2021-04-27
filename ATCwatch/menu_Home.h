@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2020 Aaron Christophel
- *
- * SPDX-License-Identifier: GPL-3.0-or-later
- */
+   Copyright (c) 2020 Aaron Christophel
+
+   SPDX-License-Identifier: GPL-3.0-or-later
+*/
 
 #pragma once
 #include "Arduino.h"
@@ -147,7 +147,13 @@ class HomeScreen : public Screen
 
     virtual void button_push(int length)
     {
-      sleep_down();
+      if (length < 500) {
+        inc_vars_menu();
+
+      }
+      else {
+        dec_vars_menu();
+      }
     }
 
   private:

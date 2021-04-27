@@ -78,11 +78,11 @@ void check_battery_status() {
     if (get_battery_percent() < 15) {
       if (!batteryWasNotified) {
         batteryWasNotified = true;
-        show_push("Battery Empty");
+        show_push("Battery Low");
       }
     } else if (get_battery_percent() < 5) {
       system_off();
-    } else {
+    } else if (digitalRead(POWER_INDICATION)) {
       batteryWasNotified = false;
     }
   }

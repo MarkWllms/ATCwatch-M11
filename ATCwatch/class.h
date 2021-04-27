@@ -53,7 +53,14 @@ class Screen : public Screen_def
 
     virtual void button_push(int length)
     {
-      display_home();
-      set_motor_ms(40);
+      if (length < 500) {
+        inc_vars_menu();
+
+      }
+      else {
+        display_home();
+
+      }
+
     }
 };
