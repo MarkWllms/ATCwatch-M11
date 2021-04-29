@@ -46,7 +46,7 @@ class SettingsBrightnessScreen : public Screen
       lv_label_set_text(btn2_label, "Save");
 
       slider = lv_slider_create(lv_scr_act(), NULL);
-      lv_slider_set_range(slider, 1, 7);
+      lv_slider_set_range(slider, 1, 255);
       lv_obj_set_event_cb(slider, lv_event_handler);
       lv_obj_align(slider, NULL, LV_ALIGN_CENTER, 0, -10);
       lv_slider_set_value(slider, get_backlight(), LV_ANIM_OFF);

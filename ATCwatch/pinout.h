@@ -114,9 +114,9 @@
 //#define PUSH_BUTTON_OUT   -1   // P8 Watch
 
 //Backlight
-#define LCD_BACKLIGHT_LOW  14
-#define LCD_BACKLIGHT_MID  22
-#define LCD_BACKLIGHT_HIGH 23
+#define LCD_BACKLIGHT_PWM  14
+//#define LCD_BACKLIGHT_MID  22
+//#define LCD_BACKLIGHT_HIGH 23
 
 
 #endif // P8WATCH

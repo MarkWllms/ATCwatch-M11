@@ -120,12 +120,8 @@ void filterCmd(String Command) {
     ble_write("AT+SN:P8");
   } else if (Command.substring(0, 12) == "AT+CONTRAST=") {
     String contrastTemp = Command.substring(12);
-    if (contrastTemp == "100")
-      set_backlight(1);
-    else if (contrastTemp == "175")
-      set_backlight(3);
-    else set_backlight(7);
-    ble_write("AT+CONTRAST:" + Command.substring(12));
+    set_backlight(strtol(contrastTemp.c_str(),NULL,0));
+        ble_write("AT+CONTRAST:" + Command.substring(12));
   } else if (Command.substring(0, 10) == "AT+MOTOR=1") {
     String motor_power = Command.substring(10);
     if (motor_power == "1")
